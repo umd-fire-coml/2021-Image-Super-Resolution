@@ -22,7 +22,7 @@ def check(verbose):
            else:
                print(subset_path + ' is MISSING!')
        # Check if DIV2K contains all required HR subsets.
-       subsets_HR = ["DIV_train_LR_x8", "DIV2K_train_LR_mild", "DIV2k_train_LR_difficult", 
+       subsets_HR = ["DIV2K_train_LR_x8", "DIV2K_train_LR_mild", "DIV2K_train_LR_difficult", 
        "DIV2K_train_LR_wild", "DIV2K_valid_LR_difficult", "DIV2K_valid_LR_wild", 
        "DIV2K_train_HR", "DIV2K_valid_HR"]
        for subset in subsets_HR:
@@ -32,9 +32,5 @@ def check(verbose):
    else:
        print('DIV2K is MISSING!')
 
-# for testing purposes
-# def main():
-    # check(1)
 
-# if __name__ == "__main__":
-    # ain()
+check(1)
