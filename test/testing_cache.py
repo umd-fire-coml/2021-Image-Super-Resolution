@@ -1,4 +1,4 @@
 import pytest
 
-def test_sanity():
+def testing_cache():
   assert(1 == 1)
