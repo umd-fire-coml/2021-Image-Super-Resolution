@@ -1,0 +1,9 @@
+python
+bs4
+requests
+io
+zipfile
+urllib.request
+re
+os
+tensorflow
