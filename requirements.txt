@@ -1,7 +1,4 @@
 bs4
 requests
-zipfile
 urllib.request
-re
-os
 tensorflow
