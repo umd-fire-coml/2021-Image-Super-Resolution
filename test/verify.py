@@ -31,6 +31,7 @@ def check(verbose):
                print(subset_path + ' is MISSING!')
    else:
        print('DIV2K is MISSING!')
-
+   return "test done"
+    
 
 check(1)
