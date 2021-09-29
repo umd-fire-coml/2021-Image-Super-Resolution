@@ -1,4 +1,7 @@
-from src.cache_creation import cache_creation
+import os
+os.path.abspath('2021-Image-Super-Resolution')
+os.chdir('src')
+from cache_creation import cache_creation
 
 def testing_cache():
     arr = cache_creation.cache_method("train", 2)
