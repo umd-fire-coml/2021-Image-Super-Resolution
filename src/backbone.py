@@ -7,10 +7,6 @@ import numpy as np
 
 from tensorflow import keras
 from tensorflow.keras import layers
-from tensorflow.keras.preprocessing.image import load_img
-from tensorflow.keras.preprocessing.image import array_to_img
-from tensorflow.keras.preprocessing.image import img_to_array
-from tensorflow.keras.preprocessing import image_dataset_from_directory
 
 def get_model(upscale_factor=3, channels=1):
     conv_args = {
