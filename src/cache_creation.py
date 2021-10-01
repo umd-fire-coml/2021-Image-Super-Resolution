@@ -27,4 +27,5 @@ class cache_creation:
             LR_cache.append('src/DIV2K/DIV2K_valid_LR_bicubic/X' + scale + '/' + num + 'x' + scale + '.png')
           else:
             LR_cache.append('src/DIV2K/DIV2K_valid_LR_x8/' + num + 'x8.png')
+            
     return [HR_cache, LR_cache]
