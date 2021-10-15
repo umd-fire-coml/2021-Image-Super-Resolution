@@ -11,6 +11,7 @@ jobs:
       - name: run_all_tests
         run: |
           pip install --upgrade pip
+          pip install tensorflow
           pip install -r requirements.txt
           pip install pytest
           python -m pytest
