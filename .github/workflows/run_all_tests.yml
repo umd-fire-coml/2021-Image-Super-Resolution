@@ -11,7 +11,7 @@ jobs:
       - name: run_all_tests
         run: |
           python3 -m pip install --upgrade pip
-          python3 -m pip install tensorflow
+          pip3 install --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.0.0-py3-none-any.whl
           pip install -r requirements.txt
           pip install pytest
           python -m pytest
