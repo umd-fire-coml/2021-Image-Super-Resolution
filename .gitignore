@@ -130,3 +130,5 @@ dmypy.json
 
 #gitignore the training/test images
 DIV2K/
+
+*.DS_Store
