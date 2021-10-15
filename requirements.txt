@@ -1,4 +1,4 @@
 bs4
-tensorflow
 requests
+tensorflow
 pytest
