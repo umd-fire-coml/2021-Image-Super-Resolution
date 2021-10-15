@@ -11,7 +11,7 @@ jobs:
       - name: run_all_tests
         run: |
           python3 -m pip install --upgrade pip
-          pip3 install --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-2.6.0-cp39-cp39-macosx_10_11_x86_64.whl
+          pip3 install --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-2.6.0-cp37-cp37m-macosx_10_11_x86_64.whl
           pip install -r requirements.txt
           pip install pytest
           python -m pytest
