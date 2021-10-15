@@ -1,6 +1,6 @@
 from src.generator import DataGenerator
 
-def test_cache():
+def test_generator():
     a = DataGenerator(2, batch_size = 8, type = "train", n_dataset_items=800)
     
     HR = a.HR_imgs
