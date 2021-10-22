@@ -30,7 +30,7 @@ class DataGenerator(Sequence):
     def __get_input(self, index):
         LR = []
         HR = []
-        pair = []
+        #pair = []
         min_h_LR = maxsize
         min_w_LR = maxsize
         for i in index:
