@@ -43,7 +43,7 @@ class DataGenerator(Sequence):
             LR.append(LR_img)
             HR.append(HR_img)
 
-            pair.append((LR_img, HR_img))
+            #pair.append((LR_img, HR_img))
 
             min_h_LR = min(min_h_LR,LR_img.shape[0])
             min_w_LR = min(min_w_LR,LR_img.shape[1])
@@ -52,13 +52,20 @@ class DataGenerator(Sequence):
         min_w_HR = self.scale * min_w_LR
 
         #...
-        for i in range (0, len(pair)):
-            temp = list(pair[i])
-            temp[0] = self.crop_img(LR[i], min_w_LR, min_h_LR)
-            temp[1] = self.crop_img(HR[i], min_w_HR, min_h_HR)
-            pair[i] = tuple(temp)
-            
-        return pair
+        for i in range (0, len(LR)):
+            #temp = list(pair[i])
+            #temp[0] = self.crop_img(LR[i], min_w_LR, min_h_LR)
+            #temp[1] = self.crop_img(HR[i], min_w_HR, min_h_HR)
+            #pair[i] = tuple(temp)
+            LR[i] = self.crop_img(LR[i], min_w_LR, min_h_LR)
+            HR[i] = self.crop_img(HR[i], min_w_HR, min_h_HR)
+        
+        # LR = np.asarray(LR).astype(np.float32)
+        # HR = np.asarray(HR).astype(np.float32)
+        LR = np.asarray(LR)
+        HR = np.asarray(HR)
+
+        return LR, HR
     
 
     def __getitem__(self, index):
@@ -68,7 +75,7 @@ class DataGenerator(Sequence):
         """
     
         # Generate indexes of the batch
-        batches = self.indexes[(index-1) * self.batch_size : index * self.batch_size]
+        batches = self.indexes[(index) * self.batch_size : (index+1) * self.batch_size]
         
         # Generate data
         X = self.__get_input(batches)       
