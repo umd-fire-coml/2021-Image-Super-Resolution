@@ -1,7 +1,7 @@
 from src.generator import DataGenerator
 
 def test_generator():
-    a = DataGenerator(2, batch_size = 8, type = "train", n_dataset_items=800)
+    a = DataGenerator(2, batch_size = 8, type = "train")
     
     HR = a.HR_imgs
     LR = a.LR_imgs
