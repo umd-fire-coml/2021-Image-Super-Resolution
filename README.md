@@ -1,1 +1,4 @@
-# 2021-Image-Super-Resolution
+# 2021-Image-Super-Resolution #
+
+## Model Explanation ##
+First, the image passes through a series of convolutional layers. On a high level, convolutional layers extract features from the image goign from the most broad, to finer details. On a lower level, each layer has a function called a kernal, which is the part of the layer that gets trained, and the convolutional layer performs a convolution on the input data and the kernal to produce the layer's output. This moves the information about image feature into the third dimension, what is often called the depth. The last convolutional layer also scales up the image and all of its features. At the very end, the image with its extracted features is put into a special function called depth to space, which turns all those features in the depth dimension back into actual pixles. After this, we have our super-resolved image.
