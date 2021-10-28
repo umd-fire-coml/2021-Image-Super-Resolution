@@ -1,6 +1,7 @@
 # 2021-Image-Super-Resolution #
 
 ## Model Explanation ##
+![example of ESPCN network](https://www.researchgate.net/profile/Laure-Tougne/publication/348205251/figure/fig3/AS:998108766953472@1614979082518/Ecient-sub-pixel-convolutional-neural-network-ESPCN-29.ppm)
 1. We take a low resolution image as input.
 
 2. The image passes through a series of layers that extract features from the image.
