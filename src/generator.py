@@ -2,7 +2,7 @@ from sys import maxsize
 import numpy as np
 import tensorflow as tf
 from tensorflow.keras.utils import Sequence
-from src.cache_creation import cache_creation
+from cache_creation import cache_creation
 
 
 class DataGenerator(Sequence):
@@ -81,7 +81,7 @@ class DataGenerator(Sequence):
         batches = self.indexes[index * self.batch_size : (index+1) * self.batch_size]
         
         # Generate data
-        X = self.__get_input(batches)       
+        X = self.__get_input(batches)
 
 
         # return a batch of HR and HR images 
