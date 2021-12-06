@@ -19,8 +19,6 @@ class DataGenerator(Sequence):
         self.shuffle = shuffle
         self.on_epoch_end()
         
-        
-
     def __len__(self):
         """Denotes the number of batches per epoch
         :return: number of batches per epoch
@@ -30,38 +28,32 @@ class DataGenerator(Sequence):
     def __get_input(self, index):
         LR = []
         HR = []
-        #pair = []
+        
         min_h_LR = maxsize
         min_w_LR = maxsize
+
+        # store all the LR and HR images into LR array and HR array
         for i in index:
             LR_img = tf.keras.preprocessing.image.load_img(self.LR_imgs[i])
             HR_img = tf.keras.preprocessing.image.load_img(self.HR_imgs[i])
             LR_img = np.asarray(LR_img)
             HR_img = np.asarray(HR_img)
 
-
             LR.append(LR_img)
             HR.append(HR_img)
 
-            #pair.append((LR_img, HR_img))
-
+            # find the minimum height and width of the image for cropping
             min_h_LR = min(min_h_LR,LR_img.shape[0])
             min_w_LR = min(min_w_LR,LR_img.shape[1])
 
         min_h_HR = self.scale * min_h_LR
         min_w_HR = self.scale * min_w_LR
 
-        #...
+        # crop the images
         for i in range (0, len(LR)):
-            #temp = list(pair[i])
-            #temp[0] = self.crop_img(LR[i], min_w_LR, min_h_LR)
-            #temp[1] = self.crop_img(HR[i], min_w_HR, min_h_HR)
-            #pair[i] = tuple(temp)
             LR[i] = self.crop_img(LR[i], min_w_LR, min_h_LR)
             HR[i] = self.crop_img(HR[i], min_w_HR, min_h_HR)
         
-        # LR = np.asarray(LR).astype(np.float32)
-        # HR = np.asarray(HR).astype(np.float32)
         LR = np.asarray(LR)
         HR = np.asarray(HR)
 
@@ -79,7 +71,6 @@ class DataGenerator(Sequence):
         
         # Generate data
         X = self.__get_input(batches)       
-
 
         # return a batch of HR and HR images 
         return X

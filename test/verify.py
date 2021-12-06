@@ -7,7 +7,7 @@ def check(verbose):
         print('Checking dataset...')
    dataset_path = 'DIV2K'
    if path.exists(dataset_path):
-       # Check if .. contains all required LR subsets.
+       # Check if DIV2K contains all required LR subsets.
        subsets_LR = ["DIV2K_train_LR_bicubic","DIV2K_train_LR_unknown", 
        "DIV2K_valid_LR_bicubic", "DIV2K_valid_LR_unknown"]
        for subset in subsets_LR:
