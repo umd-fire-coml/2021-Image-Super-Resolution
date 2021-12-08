@@ -15,6 +15,7 @@ We use the DIV2K dataset as our image dataset to train and test our model. The r
 
 ## Demonstrational Video: ##
 [![demonstration](https://youtu.be/OMfTSoxE3QY.jpg)](https://youtu.be/OMfTSoxE3QY "T1 Super Resolution Image Demonstration")
+Watch this short video to see our model in action in our Interactice Notebook through Google Colab. The notebook is linked below where you can take a deeper look at our model.
 
 ## Google Colab: ##
 [https://colab.research.google.com/drive/1sxYCYOPGuRwB46FtIq5Me8TIfXYLrpjq?usp=sharing](https://colab.research.google.com/drive/1sxYCYOPGuRwB46FtIq5Me8TIfXYLrpjq?usp=sharing)
@@ -45,8 +46,11 @@ test-requirements.txt: required python libraries for automated tests
 ## Project Setup: ##
 
 1. Clone this repository
+2. 2. Run pip install -r requirements.txt from this directoy in order to install the required libraries
+3. Follow the directions in Downloading Dataset to retrieve the required dataset
+4. Follow the steps in Traing and Testing to create and test your model.
 
-
+## Downloading Dataset: ##
 ## Training: ##
 ## Testing: ##
 
