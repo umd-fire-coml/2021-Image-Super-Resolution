@@ -42,6 +42,15 @@ requirements.txt: required python libraries
 
 test-requirements.txt: required python libraries for automated tests
 
+## Project Setup: ##
+
+1. Clone this repository
+
+
+## Training: ##
+## Testing: ##
+
+## Results: ##
 
 ## Citations: ##
 E. Byeon, “How to download & unzip zip files in Python,” Medium, 27-Dec-2020. [Online]. Available: https://stereopickle.medium.com/how-to-download-unzip-zip-files-in-python-5f326bb1a829. [Accessed: 06-Dec-2021].
