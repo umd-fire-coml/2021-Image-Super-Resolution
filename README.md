@@ -45,5 +45,7 @@ test-requirements.txt: required python libraries for automated tests
 
 ## Citations: ##
 E. Byeon, “How to download & unzip zip files in Python,” Medium, 27-Dec-2020. [Online]. Available: https://stereopickle.medium.com/how-to-download-unzip-zip-files-in-python-5f326bb1a829. [Accessed: 06-Dec-2021].
+
 K. Team, “Keras documentation: Image Super-Resolution using an efficient sub-pixel CNN,” Keras. [Online]. Available: https://keras.io/examples/vision/super_resolution_sub_pixel/. [Accessed: 06-Dec-2021].
+
 Roman Podlinov, John Zwinck, x-yuri, danodonovan, Ben Moskovitch, user14475672, and r1v3n, “Download large file in python with requests,” Stack Overflow, 01-Jul-1961. [Online]. Available: https://stackoverflow.com/questions/16694907/download-large-file-in-python-with-requests. [Accessed: 06-Dec-2021]. 
