@@ -21,7 +21,6 @@ Watch this short video to see our model in action in our Interactice Notebook th
 [https://colab.research.google.com/drive/1sxYCYOPGuRwB46FtIq5Me8TIfXYLrpjq?usp=sharing](https://colab.research.google.com/drive/1sxYCYOPGuRwB46FtIq5Me8TIfXYLrpjq?usp=sharing)
 
 ## Description of Each File: ##
-### src: ###
 
 augment.py:
 
