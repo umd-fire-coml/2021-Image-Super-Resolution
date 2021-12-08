@@ -38,6 +38,10 @@ train.py: trains the model from the training dataset and saves the weights at sr
 
 x2bs8epochs100weights.h5: saved weights from training the model for 100 epochs
 
+requirements.txt: required python libraries
+test-requirements.txt: required python libraries for automated tests
+
+
 ## Citations: ##
 E. Byeon, “How to download & unzip zip files in Python,” Medium, 27-Dec-2020. [Online]. Available: https://stereopickle.medium.com/how-to-download-unzip-zip-files-in-python-5f326bb1a829. [Accessed: 06-Dec-2021].
 K. Team, “Keras documentation: Image Super-Resolution using an efficient sub-pixel CNN,” Keras. [Online]. Available: https://keras.io/examples/vision/super_resolution_sub_pixel/. [Accessed: 06-Dec-2021].
