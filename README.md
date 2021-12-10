@@ -61,7 +61,13 @@ Run the train.py function with python train.py [model] [scale] [batch_size] [epo
 Run the test.py file to test your model. In the file you have a method called testing. Call the method using the file path to the saved weights of your model. Run ‘python test.py’ in your command line. The file will run and test 100 images through your model. You will see the image number and psnr of each image printed. And finally the average psnr number of your model will be calculated and displayed.
 
 ## Results: ##
+Example Images:
+![lowres1](https://imgur.com/eNOUA0u)
+![highres1](https://imgur.com/VzRMu8A)
+![prediction1](https://imgur.com/eNOK47o)
+
 We achieved an average psnr of 26.5.
+
 ## Citations: ##
 E. Byeon, “How to download & unzip zip files in Python,” Medium, 27-Dec-2020. [Online]. Available: https://stereopickle.medium.com/how-to-download-unzip-zip-files-in-python-5f326bb1a829. [Accessed: 06-Dec-2021].
 
