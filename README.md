@@ -1,3 +1,4 @@
+![](https://i.imgur.com/RvJDVCC.png)
 # 2021-Image-Super-Resolution #
 
 ## Changlin Jiang, Harpreet Multani, Ian Roberts, Allen Tu (Peer Mentor) ##
