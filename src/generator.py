@@ -2,20 +2,20 @@ from sys import maxsize
 import numpy as np
 import tensorflow as tf
 from tensorflow.keras.utils import Sequence
-from src.cache_creation import cache_creation
+from cache_creation import cache_creation
 
 
 class DataGenerator(Sequence):
     '''this is a random data generator, edit this data generator to read data from dataset folder and return a batch with __getitem__'''
 
-    def __init__(self, scale, batch_size=8, type = "train", n_dataset_items=800, shuffle = False):
+    def __init__(self, scale, batch_size, type = "train", shuffle = False):
         self.scale = scale
         self.batch_size = batch_size
-        self.n_dataset_items = n_dataset_items
-        self.indexes = np.arange(self.n_dataset_items)
         self.images = cache_creation.cache_method(type, scale)
         self.LR_imgs = self.images[1]
         self.HR_imgs = self.images[0]
+        self.n_dataset_items = len(self.LR_imgs)
+        self.indexes = np.arange(self.n_dataset_items)
         self.shuffle = shuffle
         self.on_epoch_end()
         
@@ -27,8 +27,8 @@ class DataGenerator(Sequence):
 
     def __get_input(self, index):
         LR = []
-        HR = []
-        
+        HR = []        
+
         min_h_LR = maxsize
         min_w_LR = maxsize
 
@@ -38,10 +38,9 @@ class DataGenerator(Sequence):
             HR_img = tf.keras.preprocessing.image.load_img(self.HR_imgs[i])
             LR_img = np.asarray(LR_img)
             HR_img = np.asarray(HR_img)
-
             LR.append(LR_img)
             HR.append(HR_img)
-
+            
             # find the minimum height and width of the image for cropping
             min_h_LR = min(min_h_LR,LR_img.shape[0])
             min_w_LR = min(min_w_LR,LR_img.shape[1])
@@ -56,7 +55,6 @@ class DataGenerator(Sequence):
         
         LR = np.asarray(LR)
         HR = np.asarray(HR)
-
         return LR, HR
     
 
@@ -67,20 +65,20 @@ class DataGenerator(Sequence):
         """
     
         # Generate indexes of the batch
-        batches = self.indexes[(index) * self.batch_size : (index+1) * self.batch_size]
+        batches = self.indexes[index * self.batch_size : (index+1) * self.batch_size]
         
         # Generate data
-        X = self.__get_input(batches)       
+        X = self.__get_input(batches)
 
         # return a batch of HR and HR images 
         return X
 
-    def crop_img(self, img, min_height, min_width):
+    def crop_img(self, img, min_width, min_height):
         crop_img = img[0:min_height, 0:min_width, ...]
         return crop_img
 
     def on_epoch_end(self):
-        """Shuffle indexes after each epoch if shuffle is True
+        """Shuffle indexes after each epoch
         """
         self.indexes = np.arange(self.n_dataset_items)
         if self.shuffle == True:
