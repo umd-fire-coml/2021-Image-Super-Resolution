@@ -2,7 +2,7 @@ from sys import maxsize
 import numpy as np
 import tensorflow as tf
 from tensorflow.keras.utils import Sequence
-from src.cache_creation import cache_creation
+from cache_creation import cache_creation
 
 
 class DataGenerator(Sequence):
