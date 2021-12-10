@@ -24,7 +24,7 @@ Watch this short video to see our model in action in our Interactice Notebook th
 
 ## Google Colab: ##
 
-The following is a link to a google colab version of our project:
+The following is a link to a google colab version of our project, where you can view some more results of our super-resolution model:
 
 [https://colab.research.google.com/drive/1sxYCYOPGuRwB46FtIq5Me8TIfXYLrpjq?usp=sharing](https://colab.research.google.com/drive/1sxYCYOPGuRwB46FtIq5Me8TIfXYLrpjq?usp=sharing)
 
