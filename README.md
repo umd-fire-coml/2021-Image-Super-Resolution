@@ -64,9 +64,11 @@ Run the test.py file to test your model. In the file you have a method called te
 ## Results: ##
 Example Images:
 
-![lowres1](https://i.imgur.com/KQta1N4.png)
+Here is a sample output of our model. On the left is the low-resolution image that we gave our model. In the middle is an high-resolution image we are trying to get our model to output. And lastly, we have the super-resolved image that our model outputs.
 
-We achieved an average psnr of 26.5.
+![final_img](https://i.imgur.com/KQta1N4.png)
+
+We tested our model against 100 test images from the DIV2K dataset. Our model reached an average psnr of 25.28.
 
 ## Citations: ##
 E. Byeon, “How to download & unzip zip files in Python,” Medium, 27-Dec-2020. [Online]. Available: https://stereopickle.medium.com/how-to-download-unzip-zip-files-in-python-5f326bb1a829. [Accessed: 06-Dec-2021].
