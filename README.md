@@ -62,9 +62,9 @@ Run the test.py file to test your model. In the file you have a method called te
 
 ## Results: ##
 Example Images:
-![lowres1](https://imgur.com/eNOUA0u)
-![highres1](https://imgur.com/VzRMu8A)
-![prediction1](https://imgur.com/eNOK47o)
+![lowres1](https://i.imgur.com/eNOUA0u.png)
+![highres1](https://i.imgur.com/VzRMu8A.png)
+![prediction1](https://i.imgur.com/eNOK47o.png)
 
 We achieved an average psnr of 26.5.
 
