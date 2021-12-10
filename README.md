@@ -1,7 +1,9 @@
+<p align="center">
+ 
 # 2021-Image-Super-Resolution #
 
 ## Changlin Jiang, Harpreet Multani, Ian Roberts, Allen Tu (Peer Mentor) ##
-
+3.</p>
 ## Model Explanation ##
 ![example of ESPCN network](https://www.researchgate.net/profile/Laure-Tougne/publication/348205251/figure/fig3/AS:998108766953472@1614979082518/Ecient-sub-pixel-convolutional-neural-network-ESPCN-29.ppm)
 1. We take a low resolution image as input.
@@ -49,7 +51,7 @@ test-requirements.txt: required python libraries for automated tests
 ## Project Setup: ##
 
 1. Clone this repo6ysitory
-2. 2. Run pip install -r requirements.txt from this directoy in order to install the required libraries
+2. Run pip install -r requirements.txt from this directoy in order to install the required libraries
 3. Follow the directions in Downloading Dataset to retrieve the required dataset
 4. Follow the steps in Traing and Testing to create and test your model.
 
