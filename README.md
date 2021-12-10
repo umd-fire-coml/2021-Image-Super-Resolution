@@ -1,4 +1,5 @@
 <p align="center">
+ ![example of ESPCN network](https://imgur.com/x24CxjR)
 # 2021-Image-Super-Resolution #
 
 ## Changlin Jiang, Harpreet Multani, Ian Roberts, Allen Tu (Peer Mentor) ##
