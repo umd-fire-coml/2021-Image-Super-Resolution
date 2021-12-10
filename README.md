@@ -1,6 +1,6 @@
 # 2021-Image-Super-Resolution #
 
-##Changlin Jiang, Harpreet Multani, Ian Roberts, Allen Tu (Peer Mentor)##
+## Changlin Jiang, Harpreet Multani, Ian Roberts, Allen Tu (Peer Mentor) ##
 
 ## Model Explanation ##
 ![example of ESPCN network](https://www.researchgate.net/profile/Laure-Tougne/publication/348205251/figure/fig3/AS:998108766953472@1614979082518/Ecient-sub-pixel-convolutional-neural-network-ESPCN-29.ppm)
