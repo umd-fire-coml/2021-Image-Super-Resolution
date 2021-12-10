@@ -1,5 +1,7 @@
 import tensorflow as tf
 import numpy as np
+from tensorflow.keras.preprocessing.image import array_to_img
+from tensorflow.keras.preprocessing.image import img_to_array
 from tensorflow.keras.preprocessing.image import load_img
 import backbone
 import generator
@@ -23,8 +25,8 @@ def testing(weights):
         batch = testing_generator.__getitem__(i)
         img = array_to_img(np.resize(batch[1],(1356, 2040, 3)))
         lowres_input = array_to_img(np.resize(batch[0],(678, 1020, 3)))
-        w = lowres_input.size[0] * upscale_factor
-        h = lowres_input.size[1] * upscale_factor
+        w = lowres_input.size[0] * 2
+        h = lowres_input.size[1] * 2
         highres_img = img.resize((2040, 1356))
         prediction = array_to_img(np.resize(model.predict(batch[0]),(1356, 2040, 3)))
         highres_img_arr = img_to_array(highres_img)
