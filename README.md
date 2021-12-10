@@ -63,6 +63,7 @@ Run the test.py file to test your model. In the file you have a method called te
 
 ## Results: ##
 Example Images:
+
 ![lowres1](https://i.imgur.com/eNOUA0u.png)
 ![highres1](https://i.imgur.com/VzRMu8A.png)
 ![prediction1](https://i.imgur.com/eNOK47o.png)
