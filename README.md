@@ -1,9 +1,7 @@
 <p align="center">
- 
 # 2021-Image-Super-Resolution #
 
 ## Changlin Jiang, Harpreet Multani, Ian Roberts, Allen Tu (Peer Mentor) ##
-
 </p>
 
 ## Model Explanation ##
