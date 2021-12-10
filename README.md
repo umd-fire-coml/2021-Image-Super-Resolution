@@ -23,6 +23,9 @@ We use the DIV2K dataset as our image dataset to train and test our model. The r
 Watch this short video to see our model in action in our Interactice Notebook through Google Colab. The notebook is linked below where you can take a deeper look at our model.
 
 ## Google Colab: ##
+
+The following is a link to a google colab version of our project:
+
 [https://colab.research.google.com/drive/1sxYCYOPGuRwB46FtIq5Me8TIfXYLrpjq?usp=sharing](https://colab.research.google.com/drive/1sxYCYOPGuRwB46FtIq5Me8TIfXYLrpjq?usp=sharing)
 
 ## Description of Each File: ##
