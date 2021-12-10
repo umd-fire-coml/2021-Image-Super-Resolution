@@ -5,5 +5,5 @@ def test_cache():
     
     HR = arr[0]
     LR = arr[1]
-    assert(LR[3] == 'src/DIV2K/DIV2K_train_LR_bicubic/X2/0004x2.png')
-    assert(HR[5] == 'src/DIV2K/DIV2K_train_HR/0006.png')
+    assert(LR[3] == '../DIV2K/DIV2K_train_LR_bicubic/X2/0004x2.png')
+    assert(HR[5] == '../DIV2K/DIV2K_train_HR/0006.png')
