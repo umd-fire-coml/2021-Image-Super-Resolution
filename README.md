@@ -17,8 +17,8 @@
 ## DIV2K Dataset ##
 We use the DIV2K dataset as our image dataset to train and test our model. The reason we choose DIV2K as our dataset is that DIV2K supports different scales of the images for training and it has high resolution (HR) images that can be used to compare with our output super-resolved (SR) images.
 
-## Demonstrational Video: ##
-[!["T1 Super Resolution Image Demonstration"](https://i9.ytimg.com/vi_webp/OMfTSoxE3QY/mqdefault.webp?v=61b10aaa&sqp=CJDsyI0G&rs=AOn4CLDIbr6yP_G4T5uQXzXDTsp2QtqFwA)](https://youtu.be/OMfTSoxE3QY)
+### Demonstrational Video: ##
+[!["T1 Super Resolution Image Demonstration"](https://i.imgur.com/PBJ8OuQ.png)](https://youtu.be/OMfTSoxE3QY)
 
 Watch this short video to see our model in action in our Interactice Notebook through Google Colab. The notebook is linked below where you can take a deeper look at our model.
 
