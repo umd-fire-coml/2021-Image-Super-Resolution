@@ -18,6 +18,7 @@ We use the DIV2K dataset as our image dataset to train and test our model. The r
 
 ## Demonstrational Video: ##
 [!["T1 Super Resolution Image Demonstration"](https://i9.ytimg.com/vi_webp/OMfTSoxE3QY/mqdefault.webp?v=61b10aaa&sqp=CJDsyI0G&rs=AOn4CLDIbr6yP_G4T5uQXzXDTsp2QtqFwA)](https://youtu.be/OMfTSoxE3QY)
+
 Watch this short video to see our model in action in our Interactice Notebook through Google Colab. The notebook is linked below where you can take a deeper look at our model.
 
 ## Google Colab: ##
